@@ -2,7 +2,7 @@
 
 file = open('source', 'r')
 source = file.readlines()
-source = [int(i.strip(), 2) for i in ram]
+source = [int(source[i].strip(), 2) for i in range(len(source) - 1)]
 
 ram = 300 * [0]
 ip = 0
